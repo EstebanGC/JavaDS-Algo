@@ -1,7 +1,5 @@
 package org.example.data_structures;
 
-import org.example.data_structures.*;
-
 import java.util.Stack;
 
 public class StackDS {

@@ -1,6 +1,5 @@
 package org.example;
-import org.example.data_structures.StackDS;
-
+import org.example.data_structures.QueueDS;
 import org.example.data_structures.StackDS;
 
 import java.util.Scanner;
@@ -15,5 +14,12 @@ public class Main {
 
         System.out.println(stackDS);
 
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.println("Enter the element you want to add to the queue: ");
+        Integer element2 = scanner2.nextInt();
+        QueueDS queueDS = new QueueDS();
+        queueDS.offerElement(element2);
+
+        System.out.println(queueDS);
     }
 }
