@@ -1,4 +1,5 @@
 package org.example;
+import org.example.data_structures.PriorityQueueDS;
 import org.example.data_structures.QueueDS;
 import org.example.data_structures.StackDS;
 
@@ -6,20 +7,32 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner stackScanner = new Scanner(System.in);
         System.out.println("Enter the element you want to add to the stack: ");
-        String element = scanner.nextLine();
+        String stackElement = stackScanner.nextLine();
         StackDS stackDS = new StackDS();
-        stackDS.pushElement(element);
+        stackDS.pushElement(stackElement);
+
+        //------------------------------
 
         System.out.println(stackDS);
 
-        Scanner scanner2 = new Scanner(System.in);
+        Scanner queueScanner = new Scanner(System.in);
         System.out.println("Enter the element you want to add to the queue: ");
-        Integer element2 = scanner2.nextInt();
+        Integer queueElement = queueScanner.nextInt();
         QueueDS queueDS = new QueueDS();
-        queueDS.offerElement(element2);
+        queueDS.offerElement(queueElement);
 
         System.out.println(queueDS);
+
+        //------------------------------
+
+        Scanner priorityQueueElement = new Scanner(System.in);
+        System.out.println("Enter the element you want to add to the priority queue: ");
+        Double priorityElement = priorityQueueElement.nextDouble();
+        PriorityQueueDS priorityQueueDS = new PriorityQueueDS();
+        priorityQueueDS.offerPQElement(priorityElement);
+
+        System.out.println(priorityQueueDS);
     }
 }

@@ -5,10 +5,12 @@ import java.util.Queue;
 
 public class QueueDS {
 
-    public void offerElement(Integer element2) {
+    public void offerElement(Integer queueElement) {
         Queue<Integer> queue = new LinkedList<Integer>();
 
-        queue.offer(element2);
+        queue.offer(queueElement);
+
+        queue.poll();
 
         System.out.println("This is your queue: " + queue);
     }
