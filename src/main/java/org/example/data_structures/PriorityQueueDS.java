@@ -9,6 +9,6 @@ public class PriorityQueueDS {
 
         priorityQueue.offer(priorityQueueElement);
 
-        System.out.println(priorityQueue);
+        System.out.println("This is your priority queue: " + priorityQueue);
     }
 }
