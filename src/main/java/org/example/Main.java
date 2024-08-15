@@ -1,4 +1,5 @@
 package org.example;
+import org.example.data_structures.LinkedListDS;
 import org.example.data_structures.PriorityQueueDS;
 import org.example.data_structures.QueueDS;
 import org.example.data_structures.StackDS;
@@ -27,12 +28,22 @@ public class Main {
 
         //------------------------------
 
-        Scanner priorityQueueElement = new Scanner(System.in);
+        Scanner priorityQueueScanner = new Scanner(System.in);
         System.out.println("Enter the element you want to add to the priority queue: ");
-        Double priorityElement = priorityQueueElement.nextDouble();
+        Double priorityQueueElement = priorityQueueScanner.nextDouble();
         PriorityQueueDS priorityQueueDS = new PriorityQueueDS();
-        priorityQueueDS.offerPQElement(priorityElement);
+        priorityQueueDS.offerPQElement(priorityQueueElement);
 
         System.out.println(priorityQueueDS);
+
+        //------------------------------
+
+        Scanner linkedListScanner = new Scanner(System.in);
+        System.out.println("Enter the element you want to add to the linked list: ");
+        String linkedListElement = linkedListScanner.nextLine();
+        LinkedListDS linkedListDS = new LinkedListDS();
+        linkedListDS.addElement(linkedListElement);
+
+        System.out.println(linkedListDS);
     }
 }
