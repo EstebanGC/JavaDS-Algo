@@ -14,6 +14,6 @@ public class LinkedListDS {
 
         linkedList.pop();
 
-        System.out.println("This is your linked list: " + linkedList);
+        System.out.println("This is your linked list: " + linkedList + linkedList.size());
     }
 }
