@@ -1,8 +1,5 @@
 package org.example;
-import org.example.data_structures.LinkedListDS;
-import org.example.data_structures.PriorityQueueDS;
-import org.example.data_structures.QueueDS;
-import org.example.data_structures.StackDS;
+import org.example.data_structures.*;
 
 import java.util.Scanner;
 
@@ -45,5 +42,15 @@ public class Main {
         linkedListDS.addElement(linkedListElement);
 
         System.out.println(linkedListDS);
+
+        //------------------------------
+
+        Scanner dinamicArrayScanner = new Scanner(System.in);
+        System.out.println("Enter the element you want to add to the dinamic array: ");
+        String dinamicArrayElement = dinamicArrayScanner.nextLine();
+        DinamicArrayDS dinamicArrayDS = new DinamicArrayDS();
+        dinamicArrayDS.addDinArr(dinamicArrayElement);
+
+        System.out.println(dinamicArrayDS);
     }
 }
