@@ -47,10 +47,13 @@ public class Main {
 
         Scanner dinamicArrayScanner = new Scanner(System.in);
         System.out.println("Enter the element you want to add to the dinamic array: ");
+
         String dinamicArrayElement = dinamicArrayScanner.nextLine();
         DinamicArrayDS dinamicArrayDS = new DinamicArrayDS();
         dinamicArrayDS.addDinArr(dinamicArrayElement);
 
+        System.out.println("whatever: ");
         System.out.println(dinamicArrayDS);
     }
+
 }
