@@ -5,16 +5,17 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        //Stack
         Scanner stackScanner = new Scanner(System.in);
         System.out.println("Enter the element you want to add to the stack: ");
         String stackElement = stackScanner.nextLine();
         StackDS stackDS = new StackDS();
         stackDS.pushElement(stackElement);
 
-        //------------------------------
-
         System.out.println(stackDS);
 
+        //Queue
         Scanner queueScanner = new Scanner(System.in);
         System.out.println("Enter the element you want to add to the queue: ");
         Integer queueElement = queueScanner.nextInt();
@@ -23,8 +24,8 @@ public class Main {
 
         System.out.println(queueDS);
 
-        //------------------------------
 
+        //Priority Queue
         Scanner priorityQueueScanner = new Scanner(System.in);
         System.out.println("Enter the element you want to add to the priority queue: ");
         Double priorityQueueElement = priorityQueueScanner.nextDouble();
@@ -33,8 +34,7 @@ public class Main {
 
         System.out.println(priorityQueueDS);
 
-        //------------------------------
-
+        //Linked List
         Scanner linkedListScanner = new Scanner(System.in);
         System.out.println("Enter the element you want to add to the linked list: ");
         String linkedListElement = linkedListScanner.nextLine();
@@ -43,8 +43,7 @@ public class Main {
 
         System.out.println(linkedListDS);
 
-        //------------------------------
-
+        //Dinamic Array
         Scanner dinamicArrayScanner = new Scanner(System.in);
         System.out.println("Enter the element you want to add to the dinamic array: ");
 
@@ -52,8 +51,12 @@ public class Main {
         DinamicArrayDS dinamicArrayDS = new DinamicArrayDS();
         dinamicArrayDS.addDinArr(dinamicArrayElement);
 
-        System.out.println("whatever: ");
         System.out.println(dinamicArrayDS);
+
+        //LinkedList vs ArrayList
+        LLvAL llvAL = new LLvAL();
+        llvAL.time();
+        System.out.println(llvAL);
     }
 
 }
