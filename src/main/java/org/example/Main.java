@@ -24,7 +24,6 @@ public class Main {
 
         System.out.println(queueDS);
 
-
         //Priority Queue
         Scanner priorityQueueScanner = new Scanner(System.in);
         System.out.println("Enter the element you want to add to the priority queue: ");
@@ -57,6 +56,6 @@ public class Main {
         LLvAL llvAL = new LLvAL();
         llvAL.time();
         System.out.println(llvAL);
+        System.out.println("I'm tired today :( ");
     }
-
 }
