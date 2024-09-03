@@ -17,6 +17,7 @@ public class LinearSearch {
             System.out.println(target + " not found");
         } else {
             System.out.println(target + " found at index " + index );
+            
         }
     }
 }
