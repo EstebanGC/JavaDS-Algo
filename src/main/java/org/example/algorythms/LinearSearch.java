@@ -17,7 +17,13 @@ public class LinearSearch {
             System.out.println(target + " not found");
         } else {
             System.out.println(target + " found at index " + index );
-            
         }
+    }
+
+    private static int binarySearch(int[] array, int target) {
+        int low = 0;
+        int high = array.length - 1;
+
+        return -1;
     }
 }
