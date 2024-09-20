@@ -17,7 +17,7 @@ public class Main {
 
         //Queue
         Scanner queueScanner = new Scanner(System.in);
-        System.out.println("Enter the element you want to add to the queue: ");
+        System.out.println("Enter the element you want to add to the queue: hey! ");
         Integer queueElement = queueScanner.nextInt();
         QueueDS queueDS = new QueueDS();
         queueDS.offerElement(queueElement);
@@ -44,7 +44,7 @@ public class Main {
 
         //Dinamic Array
         Scanner dinamicArrayScanner = new Scanner(System.in);
-        System.out.println("Enter the element you want to add to the dinamic array: ");
+        System.out.println("Enter the element you want to add to the dinamic array...: ");
 
         String dinamicArrayElement = dinamicArrayScanner.nextLine();
         DinamicArrayDS dinamicArrayDS = new DinamicArrayDS();
